@@ -8,7 +8,7 @@ BUGTRACKER = "https://github.com/polkit-org/polkit/issues"
 SRC_URI = "git://github.com/polkit-org/polkit.git;protocol=https;branch=main"
 
 S = "${WORKDIR}/git"
-SRCREV = "82f0924dc0eb23b9df68e88dbaf9e07c81940a5a"
+SRCREV = "7a1cff69b674dcbda0fbcdb3edf92f60ffb446ed"
 
 DEPENDS = "expat glib-2.0"
 
@@ -62,3 +62,5 @@ FILES:${PN} += " \
 	${nonarch_libdir}/polkit-1 \
 	${datadir} \
 "
+
+BBCLASSEXTEND = "native"
