@@ -58,6 +58,7 @@ do_install:append() {
 FILES:${PN} += " \
 	${libdir}/pam.d/polkit-1 \
 	${libdir}/sysusers.d \
+	${libdir}/tmpfiles.d \
 	${libdir}/polkit-1 \
 	${nonarch_libdir}/pam.d/polkit-1 \
 	${nonarch_libdir}/sysusers.d \
