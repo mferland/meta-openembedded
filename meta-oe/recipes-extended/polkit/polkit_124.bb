@@ -16,6 +16,8 @@ inherit meson pkgconfig useradd systemd gettext gobject-introspection features_c
 
 REQUIRED_DISTRO_FEATURES = "polkit"
 
+EXTRA_OEMESON = "-Dsystemdsystemunitdir=${systemd_system_unitdir}"
+
 PACKAGECONFIG = " \
 	${@bb.utils.filter('DISTRO_FEATURES', 'pam', d)} \
 	${@bb.utils.contains('DISTRO_FEATURES', 'systemd', 'systemd', 'consolekit', d)} \
