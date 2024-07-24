@@ -27,9 +27,9 @@ PACKAGECONFIG = " \
 PACKAGECONFIG[dbus] = ",,dbus"
 PACKAGECONFIG[gtk-doc] = "-Dgtk_doc=true,-Dgtk_doc=false,gtk-doc-native"
 PACKAGECONFIG[pam] = "-Dauthfw=pam,-Dauthfw=shadow,libpam,libpam"
-PACKAGECONFIG[systemd] = "-Dsession_tracking=libsystemd-login,,systemd,,,consolekit elogind"
+PACKAGECONFIG[systemd] = "-Dsession_tracking=logind,,systemd,,,consolekit elogind"
 PACKAGECONFIG[consolekit] = "-Dsession_tracking=ConsoleKit,,,consolekit,,systemd elogind"
-PACKAGECONFIG[elogind] = "-Dsession_tracking=libelogin,,elogind,,,systemd consolekit"
+PACKAGECONFIG[elogind] = "-Dsession_tracking=elogind,,elogind,,,systemd consolekit"
 PACKAGECONFIG[libs-only] = "-Dlibs-only=true,-Dlibs-only=false"
 
 # Default to mozjs javascript library
